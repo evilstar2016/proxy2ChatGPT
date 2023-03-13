@@ -23,8 +23,8 @@ const handler = async (req: Request, conn: ConnInfo): Promise<Response> => {
           'Authorization': `Bearer ${OPENAI_API_KEY}`
         },
         body: JSON.stringify({
-          // "model": "text-davinci-003",
-          "model": "text-curie-001",
+          "model": "text-davinci-003",
+          //"model": "text-curie-001",
           "prompt": body.text,
           "max_tokens": 1500
         })
